@@ -1,0 +1,20 @@
+.Logo {
+    font-family: 'KyivType Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    font-family: Kyiv Type Sans;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 5px;
+        width: 5px;
+        margin-left: 5px;
+        margin-top: 7px;
+        background-color: white;
+        border-radius: 50%;
+    }
+}

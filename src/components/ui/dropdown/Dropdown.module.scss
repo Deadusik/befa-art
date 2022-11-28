@@ -1,0 +1,54 @@
+@import '../../../styles/colors.scss';
+
+%fontstyle {
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+%arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.Dropdown {
+    width: 126px;
+    display: flex;
+    align-items: center;
+
+    &__Select {
+        width: 100%;
+        padding-left: 13px;
+        border: none;
+        appearance: none;
+        color: white;
+        position: relative;
+        background-color: transparent;
+        z-index: 2;
+        @extend %fontstyle;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__Option {
+        appearance: none;
+        background-color: $red;
+    }
+
+    &::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        margin-left: 64px;
+        margin-bottom: 5px;
+        padding: 3px;
+        position: absolute;
+        z-index: 1;
+        @extend %arrow;
+    }
+}

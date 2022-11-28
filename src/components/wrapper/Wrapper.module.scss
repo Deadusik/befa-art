@@ -1,0 +1,21 @@
+@import '../../styles/colors.scss';
+
+.Wrapper {
+    display: flex;
+    width: 100%;
+    padding: 0px 265px;
+
+    &_Top {
+        padding-top: 95px;
+    }
+
+    &_Column {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1200px) {
+    .Wrapper {
+        padding: 0;
+    }
+}
