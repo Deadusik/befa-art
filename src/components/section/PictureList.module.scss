@@ -1,25 +1,35 @@
 .PictureList {
-    &__Title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__PictureContainer {
+        width: 100%;
         display: flex;
-        align-items: center;
-        position: absolute;
-        right: 0;
+        justify-content: space-between;
+        gap: 50px;
     }
 
-    &__Name {
-        margin-right: 22px;
-        font-family: Geometria;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 30px;
-        color: white;
+    &__Picture {
+        margin-top: 54px;
+
+        &:first-child {
+            margin-top: 0px;
+        }
     }
 
-    &__Line {
-        width: 289px;
-        border: none;
-        height: 1px;
-        background-color: white;
+    &__Button {
+        margin-top: 58px;
+    }
+
+    &__Column {
+        width: 670px;
+        display: flex;
+        flex-direction: column;
+
+        &:last-child {
+            margin-top: 70px;
+        }
     }
 }

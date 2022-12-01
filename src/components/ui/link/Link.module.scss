@@ -5,4 +5,9 @@
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }

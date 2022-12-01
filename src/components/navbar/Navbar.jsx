@@ -7,15 +7,13 @@ import Wrapper from '../wrapper/Wrapper'
 //styles
 import styles from './Navbar.module.scss'
 import linkStyles from '../ui/link/Link.module.scss'
-import WrapperStyles from '../wrapper/Wrapper.module.scss'
-
 
 const Navbar = () => {
     const languages = ['eng', 'deu', 'rus'];
 
     return (
         <div className={styles.Navbar}>
-            <Wrapper styleModifier={WrapperStyles.Wrapper_Red}>
+            <Wrapper>
                 <div className={styles.Navbar__Links}>
                     <Link className={linkStyles.Link} to='/'>Home</Link>
                     <Link className={linkStyles.Link} to='/'>My portfolio</Link>

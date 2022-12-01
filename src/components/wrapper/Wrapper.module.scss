@@ -16,6 +16,12 @@
 
 @media (max-width: 1200px) {
     .Wrapper {
-        padding: 0;
+        padding: 50px;
+    }
+}
+
+@media (max-width: 414px) {
+    .Wrapper {
+        padding: 21px;
     }
 }

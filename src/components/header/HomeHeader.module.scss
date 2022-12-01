@@ -7,6 +7,23 @@
     &__Content {
         display: flex;
         justify-content: space-between;
+        gap: 50px;
+    }
+
+    &__MainPicture {
+        max-width: 910px;
+    }
+
+    &__Picture {
+        height: 280px;
+    }
+
+    &__Column {
+        max-width: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 55px;
     }
 
     &__Title {

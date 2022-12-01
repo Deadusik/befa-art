@@ -1,0 +1,45 @@
+@import '../../styles/colors.scss';
+
+.AboutMe {
+    position: relative;
+
+    &__Content {
+        padding-top: 54px;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    &__TextContent {
+        display: flex;
+        position: absolute;
+        left: 0;
+    }
+
+    &__Text {
+        margin-left: 20px;
+        font-family: 'Acworth';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 88px;
+        color: #FFFFFF;
+    }
+
+    &__Text_Span {
+        color: $red;
+    }
+
+    &__Line {
+        margin-top: 15px;
+        width: 245px;
+        border: none;
+        height: 56px;
+        background-color: $red;
+    }
+
+    &__PictureContainer {
+        width: 985px;
+    }
+}

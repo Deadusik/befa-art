@@ -1,0 +1,50 @@
+%font {
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+}
+
+%line {
+    width: 289px;
+    border: none;
+    height: 1px;
+    background-color: white;
+}
+
+.Title {
+    &_TitleLeft {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 0;
+
+        &__Name {
+            margin-right: 22px;
+            @extend %font;
+        }
+
+        &__Line {
+            @extend %line;
+        }
+    }
+
+    &_TitleRight {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        flex-direction: row-reverse;
+        left: 0;
+
+        &__Name {
+            margin-left: 22px;
+            @extend %font;
+        }
+
+        &__Line {
+            @extend %line;
+        }
+    }
+}

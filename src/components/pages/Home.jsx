@@ -1,25 +1,30 @@
 import React from 'react'
 //components
 import HomeHeader from '../header/HomeHeader'
-import Wrapper from '../wrapper/Wrapper'
 import PictureList from '../section/PictureList'
+import AboutMe from '../section/AboutMe'
+import Footer from '../footer/Footer'
 //styles
 import styles from './Home.module.scss'
-import WrapperStyles from '../wrapper/Wrapper.module.scss'
-import SizedBox from '../sized_box/SizedBox'
+
 
 
 
 const Home = () => {
     return (
         <div className={styles.Home}>
-            <Wrapper styleModifier={[WrapperStyles.Wrapper_Top, WrapperStyles.Wrapper_Column].join(' ')}>
-                <SizedBox height='114px' />
+            <div className={styles.Home__HomeHeader}>
                 <HomeHeader />
-                <SizedBox
-                    height='142px' />
+            </div>
+            <div className={styles.Home__PictureList}>
                 <PictureList />
-            </Wrapper>
+            </div>
+            <div className={styles.Home__AboutMe}>
+                <AboutMe />
+            </div>
+            <div className={styles.Home__Footer}>
+                <Footer />
+            </div>
         </div>
     );
 }
