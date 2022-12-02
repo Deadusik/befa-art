@@ -53,3 +53,29 @@
         color: white;
     }
 }
+
+@media (max-width: 414px) {
+    .HomeHeader {
+        &__Content {
+            gap: 21px;
+        }
+
+        &__Column {
+            gap: 22px;
+        }
+
+        &__Logo {
+            font-size: 82px;
+            line-height: 90px;
+        }
+
+        &__Text {
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        &__Title {
+            margin: 223px auto;
+        }
+    }
+}

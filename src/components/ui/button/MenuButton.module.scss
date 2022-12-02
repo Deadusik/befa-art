@@ -1,0 +1,28 @@
+.MenuButton {
+    display: flex;
+    justify-content: space-between;
+
+    &__TopRow {
+        width: 7.11px;
+        height: 2.22px;
+
+        background: #FFFFFF;
+        border-radius: 60px;
+    }
+
+    &__MiddleRow {
+        width: 15.56px;
+        height: 2.22px;
+
+        background: #FFFFFF;
+        border-radius: 60px;
+    }
+
+    &__BottomRow {
+        width: 12.44px;
+        height: 2.22px;
+
+        background: #FFFFFF;
+        border-radius: 60px;
+    }
+}
