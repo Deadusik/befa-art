@@ -22,3 +22,15 @@
         padding-top: 179px;
     }
 }
+
+@media (max-width: 700px) {
+    .Home {
+        &__HomeHeader {
+            padding-top: 45px;
+        }
+
+        &__PictureList {
+            padding-top: 43px;
+        }
+    }
+}

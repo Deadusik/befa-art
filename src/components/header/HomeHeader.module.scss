@@ -3,6 +3,7 @@
 .HomeHeader {
     width: 100%;
     position: relative;
+    overflow: hidden;
 
     &__Content {
         display: flex;
@@ -54,7 +55,7 @@
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 700px) {
     .HomeHeader {
         &__Content {
             gap: 21px;

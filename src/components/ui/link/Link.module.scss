@@ -6,6 +6,11 @@
     line-height: 22px;
     color: #FFFFFF;
 
+    &_Large {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
     &:hover {
         cursor: pointer;
         text-decoration: underline;

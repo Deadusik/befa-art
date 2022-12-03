@@ -1,12 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './MenuButton.module.scss'
 
-const Button = ({ children }) => {
+const Button = ({ onClick }) => {
+    const [isActive, setIsActive] = useState(true);
+    const onBtnClick = () => {
+        setIsActive(!isActive);
+        onClick();
+    }
+
     return (
-        <button className={styles.Button}>
-            <div className={styles.MenuButton__TopRow}></div>
-            <div className={styles.MenuButton__MiddleRow}></div>
-            <div className={styles.MenuButton__BottomRow}></div>
+        <button onClick={onBtnClick} className={styles.MenuButton}>
+            {isActive ?
+                <div className={styles.MenuButton__Rows}>
+                    <div className={styles.MenuButton__TopRow}></div>
+                    <div className={styles.MenuButton__MiddleRow}></div>
+                    <div className={styles.MenuButton__BottomRow}></div>
+                </div>
+                :
+                <div className={styles.MenuButton__Cross}></div>
+            }
         </button>
     )
 }

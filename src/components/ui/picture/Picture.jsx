@@ -8,7 +8,9 @@ const banDragAndDrop = event => {
 const Picture = ({ src, width, height }) => {
     return (
         <img
+            className={styles.Picture}
             src={src}
+            alt=''
             style={
                 {
                     width: width,

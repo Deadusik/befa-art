@@ -5,16 +5,15 @@ import AppRouter from './router/AppRouter'
 import MediaQuery from 'react-responsive'
 //styles
 import styles from './styles/App.scss'
-import fonts from './styles/fonts.scss'
-
+import './styles/fonts.scss'
 
 function App() {
   return (
     <div className={styles.App}>
-      <MediaQuery minWidth={414}>
+      <MediaQuery minWidth={700}>
         <Navbar />
       </MediaQuery>
-      <MediaQuery maxWidth={414}>
+      <MediaQuery maxWidth={699}>
         <MobileNavbar />
       </MediaQuery>
       <AppRouter />
