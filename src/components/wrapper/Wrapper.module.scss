@@ -14,14 +14,32 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
     .Wrapper {
-        padding: 50px;
+        padding: 0px 50px;
+
+        &_Top {
+            padding-top: 80px;
+        }
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 900px) {
     .Wrapper {
-        padding: 21px;
+        padding: 0px 30px;
+
+        &_Top {
+            padding-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .Wrapper {
+        padding: 0px 21px;
+
+        &_Top {
+            padding-top: 95px;
+        }
     }
 }

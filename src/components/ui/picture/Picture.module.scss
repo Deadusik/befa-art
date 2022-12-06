@@ -1,3 +1,31 @@
 .Picture {
     object-fit: none;
+
+    &_ToLeft {
+        object-position: 0px 0px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .Picture {
+        &_ToLeft {
+            object-position: -230px 0px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .Picture {
+        &_ToLeft {
+            object-position: -130px 0px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .Picture {
+        &_ToLeft {
+            object-position: -430px 0px;
+        }
+    }
 }

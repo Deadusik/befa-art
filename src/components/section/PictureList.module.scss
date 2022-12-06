@@ -33,3 +33,54 @@
         }
     }
 }
+
+@media (max-width: 1440px) {
+    .PictureList {
+        &__PictureContainer {
+            gap: 40px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .PictureList {
+        &__PictureContainer {
+            gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .PictureList {
+        &__PictureContainer {
+            flex-wrap: wrap;
+        }
+
+        &__Picture {
+            margin-top: 32px;
+
+            &:first-child {
+                margin-top: 0px;
+            }
+        }
+
+        &__Column {
+            &:first-child {
+                margin-top: 44px;
+            }
+
+            &:last-child {
+                margin-top: 32px;
+            }
+        }
+
+        &__PictureContainer {
+            justify-content: center;
+            gap: 0px;
+        }
+
+        &__Button {
+            margin-top: 32px;
+        }
+    }
+}

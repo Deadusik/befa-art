@@ -4,9 +4,9 @@ import SideTitle from '../ui/title/SideTitle'
 import Picture from '../ui/picture/Picture'
 //styles
 import styles from './AboutMe.module.scss'
+import pictureStyles from '../ui/picture/Picture.module.scss'
 //imgs
 import mainImg from '../../imgs/about_img.png'
-
 
 const AboutMe = () => {
     return (
@@ -14,7 +14,11 @@ const AboutMe = () => {
             <SideTitle isLeftSide={false}>About me</SideTitle>
             <div className={styles.AboutMe__Content}>
                 <div className={styles.AboutMe__PictureContainer}>
-                    <Picture src={mainImg} width='100%' />
+                    <Picture
+                        className={pictureStyles.Picture_ToLeft}
+                        src={mainImg}
+                        width='100%'
+                        height='100%' />
                 </div>
                 <div className={styles.AboutMe__TextContent}>
                     <div className={styles.AboutMe__Line}></div>

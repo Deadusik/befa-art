@@ -18,7 +18,7 @@ const PictureList = () => {
     const imgColRight = [];
 
     return (
-        <Wrapper>
+        <Wrapper >
             <div className={styles.PictureList}>
                 <SideTitle>My portfolio</SideTitle>
                 <div className={styles.PictureList__PictureContainer}>
