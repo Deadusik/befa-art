@@ -14,7 +14,7 @@ const Picture = ({ src, width, height, className }) => {
             style={
                 {
                     width: width,
-                    height: height
+                    height: height  
                 }
             }
             onMouseDown={event => banDragAndDrop(event)} />

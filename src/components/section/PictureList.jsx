@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 //components
 import Wrapper from '../wrapper/Wrapper'
 import SideTitle from '../ui/title/SideTitle'
-import Picture from '../ui/picture/Picture'
+import PictureInfo from '../ui/picture/PictureInfo'
 import Button from '../ui/button/Button'
 //styles
 import styles from './PictureList.module.scss'
@@ -11,11 +11,68 @@ import img1 from '../../imgs/img1.png'
 import img2 from '../../imgs/img2.png'
 import img3 from '../../imgs/img3.png'
 import img4 from '../../imgs/img4.png'
+import img5 from '../../imgs/img5.png'
+import img6 from '../../imgs/img6.png'
+import img7 from '../../imgs/img7.png'
+import img8 from '../../imgs/img8.png'
+import img9 from '../../imgs/img9.png'
+import img10 from '../../imgs/img10.png'
 
 
 const PictureList = () => {
-    const imgColLeft = [];
-    const imgColRight = [];
+    const titleImgs = [
+        {
+            src: img1,
+        },
+        {
+            src: img2,
+        },
+        {
+            src: img3,
+        },
+        {
+            src: img4,
+        },
+    ]
+    const hiddenImgs = [
+        {
+            src: img5,
+        },
+        {
+            src: img6,
+        },
+        {
+            src: img7,
+        },
+        {
+            src: img8,
+        },
+        {
+            src: img9,
+        },
+        {
+            src: img10,
+        }
+    ];
+    const [imgs, setImgs] = useState(titleImgs);
+
+    const [ohterIsHidden, setOtherIsHidden] = useState(true);
+    const loadMore = () => {
+        if (ohterIsHidden) {
+            setImgs([...titleImgs].concat(hiddenImgs));
+        } else {
+            setImgs(titleImgs);
+        }
+        setOtherIsHidden(!ohterIsHidden);
+    }
+
+    const pictureInfo = (picture, index) =>
+        <div className={styles.PictureList__Picture}>
+            <PictureInfo
+                key={Date.now.toString() + index}
+                src={picture.src} />
+        </div>
+
 
     return (
         <Wrapper >
@@ -23,36 +80,33 @@ const PictureList = () => {
                 <SideTitle>My portfolio</SideTitle>
                 <div className={styles.PictureList__PictureContainer}>
                     <div className={styles.PictureList__Column}>
-                        <div className={styles.PictureList__Picture}>
-                            <Picture
-                                src={img1}
-                                width='100%'
-                                height='auto' />
-                        </div>
-                        <div className={styles.PictureList__Picture}>
-                            <Picture
-                                src={img3}
-                                width='100%'
-                                height='auto' />
-                        </div>
+                        {
+                            imgs.map((picture, index) => {
+                                if (index % 2 === 0) {
+                                    return (
+                                        pictureInfo(picture, index)
+                                    );
+                                }
+                            })
+                        }
                     </div>
                     <div className={styles.PictureList__Column}>
-                        <div className={styles.PictureList__Picture}>
-                            <Picture
-                                src={img2}
-                                width='100%'
-                                height='auto' />
-                        </div>
-                        <div className={styles.PictureList__Picture}>
-                            <Picture
-                                src={img4}
-                                width='100%'
-                                height='auto' />
-                        </div>
+                        {
+                            imgs.map((picture, index) => {
+                                if (index % 2 !== 0) {
+                                    return (
+                                        pictureInfo(picture, index)
+                                    );
+                                }
+                            })
+                        }
                     </div>
                 </div>
                 <div className={styles.PictureList__Button}>
-                    <Button>Load more</Button>
+                    <Button onClick={() => loadMore()}>
+                        {ohterIsHidden ?
+                            <p>Load more</p> : <p>Hide</p>}
+                    </Button>
                 </div>
             </div >
         </Wrapper>

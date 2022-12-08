@@ -2,3 +2,21 @@
     display: flex;
     min-width: 100%;
 }
+
+.picture-enter-active {
+    opacity: 0.5;
+    transition: all 500ms ease-in;
+}
+
+.picture-enter-done {
+    opacity: 0.5;
+}
+
+.picture-exit {
+    opacity: 0.5;
+}
+
+.picture-exit-active {
+    opacity: 1;
+    transition: all 200ms;
+}

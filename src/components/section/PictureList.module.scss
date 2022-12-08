@@ -47,6 +47,14 @@
         &__PictureContainer {
             gap: 30px;
         }
+
+        &__Picture {
+            margin-top: 25px;
+
+            &:first-child {
+                margin-top: 0px;
+            }
+        }
     }
 }
 
