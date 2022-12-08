@@ -17,6 +17,7 @@ import img7 from '../../imgs/img7.png'
 import img8 from '../../imgs/img8.png'
 import img9 from '../../imgs/img9.png'
 import img10 from '../../imgs/img10.png'
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 
 const PictureList = () => {
@@ -54,24 +55,30 @@ const PictureList = () => {
             src: img10,
         }
     ];
-    const [imgs, setImgs] = useState(titleImgs);
 
+    const [imgs, setImgs] = useState(titleImgs);
     const [ohterIsHidden, setOtherIsHidden] = useState(true);
+
     const loadMore = () => {
-        if (ohterIsHidden) {
+        if (ohterIsHidden)
             setImgs([...titleImgs].concat(hiddenImgs));
-        } else {
+        else
             setImgs(titleImgs);
-        }
+
         setOtherIsHidden(!ohterIsHidden);
     }
 
-    const pictureInfo = (picture, index) =>
-        <div className={styles.PictureList__Picture}>
-            <PictureInfo
-                key={Date.now.toString() + index}
-                src={picture.src} />
-        </div>
+    const pictureInfo = (picture, animName, index) =>
+        <CSSTransition
+            key={Date.now.toString() + index}
+            timeout={500}
+            classNames={animName}>
+            <div className={styles.PictureList__Picture}>
+                <PictureInfo
+                    key={Date.now.toString() + index}
+                    src={picture.src} />
+            </div>
+        </CSSTransition>
 
 
     return (
@@ -80,26 +87,30 @@ const PictureList = () => {
                 <SideTitle>My portfolio</SideTitle>
                 <div className={styles.PictureList__PictureContainer}>
                     <div className={styles.PictureList__Column}>
-                        {
-                            imgs.map((picture, index) => {
-                                if (index % 2 === 0) {
-                                    return (
-                                        pictureInfo(picture, index)
-                                    );
-                                }
-                            })
-                        }
+                        <TransitionGroup>
+                            {
+                                imgs.map((picture, index) => {
+                                    if (index % 2 === 0) {
+                                        return (
+                                            pictureInfo(picture, 'show-right', index)
+                                        );
+                                    }
+                                })
+                            }
+                        </TransitionGroup>
                     </div>
                     <div className={styles.PictureList__Column}>
-                        {
-                            imgs.map((picture, index) => {
-                                if (index % 2 !== 0) {
-                                    return (
-                                        pictureInfo(picture, index)
-                                    );
-                                }
-                            })
-                        }
+                        <TransitionGroup>
+                            {
+                                imgs.map((picture, index) => {
+                                    if (index % 2 !== 0) {
+                                        return (
+                                            pictureInfo(picture, 'show-left', index)
+                                        );
+                                    }
+                                })
+                            }
+                        </TransitionGroup>
                     </div>
                 </div>
                 <div className={styles.PictureList__Button}>

@@ -3,11 +3,13 @@
     min-width: 100%;
 }
 
+
 .picture-enter-active {
     opacity: 0.5;
     transition: all 500ms ease-in;
 }
 
+// picture animations
 .picture-enter-done {
     opacity: 0.5;
 }
@@ -19,4 +21,84 @@
 .picture-exit-active {
     opacity: 1;
     transition: all 200ms;
+}
+
+//picture list animations
+
+//from left
+.show-left-enter {
+    opacity: 0;
+    transform: translateX(350px);
+}
+
+.show-left-enter-active {
+    opacity: 1;
+    transition: all 500ms ease-in;
+    transform: translateX(0px);
+}
+
+.show-left-exit {
+    opacity: 1;
+}
+
+.show-left-exit-active {
+    opacity: 0;
+    transition: all 500ms ease-in;
+    transform: translateX(350px);
+}
+
+//from right
+.show-right-enter {
+    opacity: 0;
+    transform: translateX(-350px);
+}
+
+.show-right-enter-active {
+    opacity: 1;
+    transition: all 500ms ease-in;
+    transform: translateX(0px);
+}
+
+.show-right-exit {
+    opacity: 1;
+}
+
+.show-right-exit-active {
+    opacity: 0;
+    transition: all 500ms ease-in;
+    transform: translateX(-350px);
+}
+
+//mobile navbar
+.show-top-enter {
+    display: flex;
+    opacity: 0;
+    transform: translateY(-100vh);
+}
+
+.show-top-enter-active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 500ms ease-in;
+}
+
+.show-top-enter-done {
+    display: flex;
+}
+
+.show-top-exit {
+    display: flex;
+    opacity: 1;
+}
+
+.show-top-exit-active {
+    display: flex;
+    opacity: 0;
+    transition: all 500ms ease-in;
+    transform: translateY(-100vh);
+}
+
+.show-top-exit-done {
+    display: none;
 }

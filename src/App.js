@@ -7,6 +7,7 @@ import MediaQuery from 'react-responsive'
 import styles from './styles/App.scss'
 import './styles/fonts.scss'
 
+
 function App() {
   return (
     <div className={styles.App}>
