@@ -1,0 +1,44 @@
+.InfoButton {
+    padding: 10px;
+    flex-direction: column;
+    background: transparent;
+
+    &__Icon {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        filter: invert(1);
+    }
+
+    &__Cross {
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            margin: auto;
+            position: absolute;
+            height: 25px;
+            width: 2px;
+            background-color: white;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+}

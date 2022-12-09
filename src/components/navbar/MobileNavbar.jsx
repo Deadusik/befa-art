@@ -13,17 +13,13 @@ import logoStyles from '../ui/logo/Logo.module.scss'
 const MobileNavbar = () => {
     const [menuIsOpen, setMenuIsOpen] = useState(false);
 
-    useEffect(() => {
-
-    }, [menuIsOpen]);
-
     return (
         <div className={styles.Navbar}>
             <div className={styles.Navbar__Logo}>
                 <Logo className={logoStyles.Logo_Small} />
             </div>
             <div className={styles.Navbar__Button}>
-                <MenuButton onClick={() => setMenuIsOpen(!menuIsOpen)} />
+                <MenuButton isActive={menuIsOpen} onClick={() => setMenuIsOpen(!menuIsOpen)} />
             </div>
             <CSSTransition
                 in={menuIsOpen}

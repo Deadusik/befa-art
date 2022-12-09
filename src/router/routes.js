@@ -6,5 +6,9 @@ export const routes = [
         path: '/',
         element: <Home />,
         error: <Error />
-    }
+    },
+    {
+        path: '*',
+        error: <Error />
+    },
 ];

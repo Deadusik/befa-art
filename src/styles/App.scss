@@ -3,22 +3,21 @@
     min-width: 100%;
 }
 
-
-.picture-enter-active {
+// picture animations
+.from-full-opacity-enter-active {
     opacity: 0.5;
     transition: all 500ms ease-in;
 }
 
-// picture animations
-.picture-enter-done {
+.from-full-opacity-enter-done {
     opacity: 0.5;
 }
 
-.picture-exit {
+.from-full-opacity-exit {
     opacity: 0.5;
 }
 
-.picture-exit-active {
+.from-full-opacity-exit-active {
     opacity: 1;
     transition: all 200ms;
 }

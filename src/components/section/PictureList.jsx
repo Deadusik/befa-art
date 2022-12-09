@@ -21,38 +21,68 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 
 const PictureList = () => {
+    //test data 
+    const title = 'Corrida';
+    const description = {
+        title: '100#100 Acryl',
+        text: 'I painted this picture experiencing love,'
+            + ' passion, pain for my Beloved, in the picture below'
+            + ' in the right corner there is an incision, a wound'
+            + ' from which blood flows, like in Corrida'
+    }
+
     const titleImgs = [
         {
             src: img1,
+            title: title,
+            description: description
         },
         {
             src: img2,
+            title: title,
+            description: description
         },
         {
             src: img3,
+            title: title,
+            description: description
         },
         {
             src: img4,
+            title: title,
+            description: description
         },
     ]
     const hiddenImgs = [
         {
             src: img5,
+            title: title,
+            description: description
         },
         {
             src: img6,
+            title: title,
+            description: description
         },
         {
             src: img7,
+            title: title,
+            description: description
         },
         {
             src: img8,
+            title: title,
+            description: description
         },
         {
             src: img9,
+            title: title,
+            description: description
         },
         {
             src: img10,
+            title: title,
+            description: description
         }
     ];
 
@@ -76,7 +106,9 @@ const PictureList = () => {
             <div className={styles.PictureList__Picture}>
                 <PictureInfo
                     key={Date.now.toString() + index}
-                    src={picture.src} />
+                    src={picture.src}
+                    title={picture.title}
+                    description={picture.description} />
             </div>
         </CSSTransition>
 

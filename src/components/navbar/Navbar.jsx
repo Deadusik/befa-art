@@ -16,10 +16,10 @@ const Navbar = () => {
             <Wrapper>
                 <div className={styles.Navbar__Links}>
                     <Link className={linkStyles.Link} to='/'>Home</Link>
-                    <Link className={linkStyles.Link} to='/'>My portfolio</Link>
+                    <Link className={linkStyles.Link} to='portfolio'>My portfolio</Link>
                     <Logo />
-                    <Link className={linkStyles.Link} to='/'>About me</Link>
-                    <Link className={linkStyles.Link} to='/'>Contacts</Link>
+                    <Link className={linkStyles.Link} to='about'>About me</Link>
+                    <Link className={linkStyles.Link} to='contacts'>Contacts</Link>
                 </div>
                 <Dropdown
                     options={
