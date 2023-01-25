@@ -9,6 +9,6 @@ export const routes = [
     },
     {
         path: '*',
-        error: <Error />
+        element: <Error />
     },
 ];
