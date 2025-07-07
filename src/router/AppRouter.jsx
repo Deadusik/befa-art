@@ -4,6 +4,7 @@ import {
     Route,
     Routes
 } from 'react-router-dom'
+import Error from '../components/pages/Error';
 
 const AppRouter = () => {
     return (
@@ -14,10 +15,10 @@ const AppRouter = () => {
                         <Route
                             key={route.path}
                             path={route.path}
-                            element={route.element}
-                            errorElement={route.error} />
+                            element={route.element} />
                     )
                 }
+                <Route path="*" element={<Error />} />
             </Routes>
         </>
     );
