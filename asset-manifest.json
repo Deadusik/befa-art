@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/befa-art/static/css/main.b4c4ad48.css",
-    "main.js": "/befa-art/static/js/main.1bf6433e.js",
+    "main.js": "/befa-art/static/js/main.1fab1531.js",
     "static/media/about_img.png": "/befa-art/static/media/about_img.76d1c91d128d26bcd19d.png",
     "static/media/main_img.png": "/befa-art/static/media/main_img.604c6ec854e93d2f1340.png",
     "static/media/img8.png": "/befa-art/static/media/img8.fc36f1622f944b6de769.png",
@@ -20,10 +20,10 @@
     "index.html": "/befa-art/index.html",
     "static/media/info.svg": "/befa-art/static/media/info.aa203ab680bbffa6429592c6d78c3e90.svg",
     "main.b4c4ad48.css.map": "/befa-art/static/css/main.b4c4ad48.css.map",
-    "main.1bf6433e.js.map": "/befa-art/static/js/main.1bf6433e.js.map"
+    "main.1fab1531.js.map": "/befa-art/static/js/main.1fab1531.js.map"
   },
   "entrypoints": [
     "static/css/main.b4c4ad48.css",
-    "static/js/main.1bf6433e.js"
+    "static/js/main.1fab1531.js"
   ]
 }
