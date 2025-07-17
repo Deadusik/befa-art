@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { useContext } from 'react'
 import LanguageContext from '../../context/languageContext'
 //components
@@ -10,7 +11,7 @@ import linkStyles from '../ui/link/Link.module.scss'
 // utils
 import { ABOUT_ID, CONTACTS_ID, PORTFOLIO_ID } from '../../utils/constants'
 import { scrollToTop } from '../../utils/functions'
-import { useTranslation } from 'react-i18next'
+
 
 const Navbar = () => {
     const languages = ['en', 'de'];
