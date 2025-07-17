@@ -1,12 +1,12 @@
-import React from 'react'
 //components
+import { CONTACTS_ID } from '../../utils/constants';
 import Wrapper from '../wrapper/Wrapper'
 //styles
 import styles from './Footer.module.scss'
 
 const Footer = () => {
     return (
-        <div className={styles.Footer}>
+        <div id={CONTACTS_ID} className={styles.Footer}>
             <Wrapper>
                 <div className={styles.Footer__Content}>
                     <h2 className={styles.Footer__Title}>My contacts</h2>

@@ -9,13 +9,15 @@ import WrapperStyles from '../wrapper/Wrapper.module.scss'
 import MainImg from '../../imgs/main_img.png'
 import Img1 from '../../imgs/img4.png'
 import Img2 from '../../imgs/img3.png'
+// utils
+import { HOME_ID } from '../../utils/constants'
 
 
 
 const HomeHeader = () => {
     return (
         <Wrapper styleModifier={[WrapperStyles.Wrapper_Top, WrapperStyles.Wrapper_Column].join(' ')}>
-            <div className={styles.HomeHeader}>
+            <div id={HOME_ID} className={styles.HomeHeader}>
                 <div className={styles.HomeHeader__Title}>
                     <div className={styles.HomeHeader__Text}>
                         Hello, i am

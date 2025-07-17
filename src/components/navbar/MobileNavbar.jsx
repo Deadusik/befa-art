@@ -8,6 +8,9 @@ import MenuButton from '../ui/button/MenuButton'
 import styles from './MobileNavbar.module.scss'
 import linkStyles from '../ui/link/Link.module.scss'
 import logoStyles from '../ui/logo/Logo.module.scss'
+// utils
+import { ABOUT_ID, CONTACTS_ID, PORTFOLIO_ID } from '../../utils/constants'
+import { scrollToTop } from '../../utils/functions'
 
 
 const MobileNavbar = () => {
@@ -15,6 +18,11 @@ const MobileNavbar = () => {
 
     const onLinkClick = () => {
         setMenuIsOpen(false)
+    }
+
+    const onHomeClick = () => {
+        onLinkClick()
+        scrollToTop()
     }
 
     return (
@@ -31,16 +39,24 @@ const MobileNavbar = () => {
                 classNames='show-top'>
                 <div className={styles.Navbar__Links}>
                     <div className={styles.Navbar__Link}>
-                        <Link onClick={(_) => onLinkClick()} className={[linkStyles.Link, linkStyles.Link_Large].join(' ')} to='/'>Home</Link>
+                        <a onClick={onHomeClick} className={[linkStyles.Link, linkStyles.Link_Large].join(' ')}>
+                            Home
+                        </a>
                     </div>
                     <div className={styles.Navbar__Link}>
-                        <Link onClick={(_) => onLinkClick()} className={[linkStyles.Link, linkStyles.Link_Large].join(' ')} to='/portfolio'>My portfolio</Link>
+                        <a onClick={onLinkClick} className={[linkStyles.Link, linkStyles.Link_Large].join(' ')} href={'#' + PORTFOLIO_ID}>
+                            My portfolio
+                        </a>
                     </div>
                     <div className={styles.Navbar__Link}>
-                        <Link onClick={(_) => onLinkClick()} className={[linkStyles.Link, linkStyles.Link_Large].join(' ')} to='/about-me'>About me</Link>
+                        <a onClick={onLinkClick} className={[linkStyles.Link, linkStyles.Link_Large].join(' ')} href={'#' + ABOUT_ID}>
+                            About me
+                        </a>
                     </div>
                     <div className={styles.Navbar__Link}>
-                        <Link onClick={(_) => onLinkClick()} className={[linkStyles.Link, linkStyles.Link_Large].join(' ')} to='/contacts'>Contacts</Link>
+                        <a onClick={onLinkClick} className={[linkStyles.Link, linkStyles.Link_Large].join(' ')} href={'#' + CONTACTS_ID}>
+                            Contacts
+                        </a>
                     </div>
                 </div>
             </CSSTransition>

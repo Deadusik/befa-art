@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 //components
 import Logo from '../ui/logo/Logo'
 import Dropdown from '../ui/dropdown/Dropdown'
@@ -6,6 +5,9 @@ import Wrapper from '../wrapper/Wrapper'
 //styles
 import styles from './Navbar.module.scss'
 import linkStyles from '../ui/link/Link.module.scss'
+// utils
+import { ABOUT_ID, CONTACTS_ID, HOME_ID, PORTFOLIO_ID } from '../../utils/constants'
+import { scrollToTop } from '../../utils/functions'
 
 const Navbar = () => {
     const languages = ['eng', 'deu'];
@@ -14,11 +16,11 @@ const Navbar = () => {
         <div className={styles.Navbar}>
             <Wrapper>
                 <div className={styles.Navbar__Links}>
-                    <Link className={linkStyles.Link} to='/'>Home</Link>
-                    <Link className={linkStyles.Link} to='/portfolio'>My portfolio</Link>
+                    <a className={linkStyles.Link} onClick={scrollToTop}>Home</a>
+                    <a className={linkStyles.Link} href={'#' + PORTFOLIO_ID}>My portfolio</a>
                     <Logo />
-                    <Link className={linkStyles.Link} to='/about'>About me</Link>
-                    <Link className={linkStyles.Link} to='/contacts'>Contacts</Link>
+                    <a className={linkStyles.Link} href={'#' + ABOUT_ID}>About me</a>
+                    <a className={linkStyles.Link} href={'#' + CONTACTS_ID}>Contacts</a>
                 </div>
                 <Dropdown
                     options={

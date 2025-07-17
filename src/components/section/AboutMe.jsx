@@ -7,10 +7,11 @@ import styles from './AboutMe.module.scss'
 import pictureStyles from '../ui/picture/Picture.module.scss'
 //imgs
 import mainImg from '../../imgs/about_img.png'
+import { ABOUT_ID } from '../../utils/constants'
 
 const AboutMe = () => {
     return (
-        <div className={styles.AboutMe}>
+        <div id={ABOUT_ID} className={styles.AboutMe}>
             <SideTitle isLeftSide={false}>About me</SideTitle>
             <div className={styles.AboutMe__Content}>
                 <div className={styles.AboutMe__PictureContainer}>

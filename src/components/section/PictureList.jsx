@@ -18,6 +18,7 @@ import img8 from '../../imgs/img8.png'
 import img9 from '../../imgs/img9.png'
 import img10 from '../../imgs/img10.png'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import { PORTFOLIO_ID } from '../../utils/constants'
 
 
 const PictureList = () => {
@@ -115,7 +116,7 @@ const PictureList = () => {
 
     return (
         <Wrapper >
-            <div className={styles.PictureList}>
+            <div id={PORTFOLIO_ID} className={styles.PictureList}>
                 <SideTitle>My portfolio</SideTitle>
                 <div className={styles.PictureList__PictureContainer}>
                     <div className={styles.PictureList__Column}>

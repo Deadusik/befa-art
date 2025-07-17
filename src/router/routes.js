@@ -2,7 +2,7 @@ import Home from "../components/pages/Home"
 
 export const routes = [
     {
-        path: '/',
+        path: '/BefaArt',
         element: <Home />
     }
 ];

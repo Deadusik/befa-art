@@ -1,0 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+[id] {
+    scroll-margin-top: 120px;
+}
+
+#home {
+    scroll-margin-top: 0 !important;
+}
