@@ -18,6 +18,7 @@
     }
 
     &__Text {
+        max-height: 620px;
         margin-left: 20px;
         font-family: 'Acworth';
         font-style: normal;
@@ -27,7 +28,7 @@
         color: #FFFFFF;
     }
 
-    &__Text_Span {
+    span {
         color: $red;
     }
 
@@ -79,8 +80,8 @@
 
         &__Text {
             margin-left: 5px;
-            font-size: 48px;
-            line-height: 42px;
+            font-size: 40px;
+            line-height: 44px;
         }
 
         &__Line {
@@ -95,8 +96,8 @@
     .AboutMe {
         &__Text {
             margin-left: 5px;
-            font-size: 40px;
-            line-height: 44px;
+            font-size: 30px;
+            line-height: 34px;
             padding-right: 50px;
         }
 

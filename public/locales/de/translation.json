@@ -1,0 +1,29 @@
+{
+    "navbar": {
+        "home": "Startseite",
+        "portfolio": "Mein Portfolio",
+        "about": "Über mich",
+        "contacts": "Kontakte"
+    },
+    "header": "Hallo, ich bin",
+    "portfolio": {
+        "title": "Mein Portfolio",
+        "more": "Mehr laden",
+        "less": "Ausblenden",
+        "img-title-example": "Corrida",
+        "img-title-info-example": "100×100 Acryl",
+        "img-info-example": "Ich malte dieses Bild, als ich Liebe, </br> Leidenschaft und Schmerz für meine Geliebte empfand. Unten im Bild<br/>in der rechten Ecke befindet sich ein Schnitt, eine Wunde,<br/>aus der Blut fließt – wie bei einer Corrida."
+    },
+    "about": {
+        "title": "Über mich",
+        "info": "Ich, <span>Befa</span>, stelle meine<br />künstlerischen Abstraktionen<br />Werke vor.<br />Diese Kunstbilder zeigen<br />das<br />ganze Spektrum meiner inneren Freude,<br />geistigen Stimmung, unermesslichen<br />Lebensfreude."
+    },
+    "contacts": {
+        "title": "Meine Kontakte",
+        "phone": "Telefon",
+        "Email": "E-Mail",
+        "Instagram": "Instagram",
+        "to-top": "Nach oben"
+    },
+    "errorpage": "Fehler, die Seite existiert nicht."
+}

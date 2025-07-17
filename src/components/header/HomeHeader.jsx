@@ -11,16 +11,17 @@ import Img1 from '../../imgs/img4.png'
 import Img2 from '../../imgs/img3.png'
 // utils
 import { HOME_ID } from '../../utils/constants'
-
-
+import { useTranslation } from 'react-i18next'
 
 const HomeHeader = () => {
+    const { t } = useTranslation()
+
     return (
         <Wrapper styleModifier={[WrapperStyles.Wrapper_Top, WrapperStyles.Wrapper_Column].join(' ')}>
             <div id={HOME_ID} className={styles.HomeHeader}>
                 <div className={styles.HomeHeader__Title}>
                     <div className={styles.HomeHeader__Text}>
-                        Hello, i am
+                        {t('header')}
                     </div>
                     <h1 className={styles.HomeHeader__Logo}>
                         BefaArt.

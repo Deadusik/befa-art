@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { useTranslation, Trans } from 'react-i18next'
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 //components
 import Wrapper from '../wrapper/Wrapper'
 import SideTitle from '../ui/title/SideTitle'
@@ -17,19 +19,16 @@ import img7 from '../../imgs/img7.png'
 import img8 from '../../imgs/img8.png'
 import img9 from '../../imgs/img9.png'
 import img10 from '../../imgs/img10.png'
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
+// utils
 import { PORTFOLIO_ID } from '../../utils/constants'
 
-
 const PictureList = () => {
-    //test data 
-    const title = 'Corrida';
+    const { t } = useTranslation()
+    //hard data
+    const title = t("portfolio.img-title-example");
     const description = {
-        title: '100#100 Acryl',
-        text: 'I painted this picture experiencing love,'
-            + ' passion, pain for my Beloved, in the picture below'
-            + ' in the right corner there is an incision, a wound'
-            + ' from which blood flows, like in Corrida'
+        title: t("portfolio.img-title-info-example"),
+        text: <Trans i18nKey="portfolio.img-info-example" components={{ br: <br /> }} />
     }
 
     const titleImgs = [
@@ -117,7 +116,7 @@ const PictureList = () => {
     return (
         <Wrapper >
             <div id={PORTFOLIO_ID} className={styles.PictureList}>
-                <SideTitle>My portfolio</SideTitle>
+                <SideTitle>{t("portfolio.title")}</SideTitle>
                 <div className={styles.PictureList__PictureContainer}>
                     <div className={styles.PictureList__Column}>
                         <TransitionGroup>
@@ -149,7 +148,7 @@ const PictureList = () => {
                 <div className={styles.PictureList__Button}>
                     <Button onClick={() => loadMore()}>
                         {ohterIsHidden ?
-                            <p>Load more</p> : <p>Hide</p>}
+                            <p>{t("portfolio.more")}</p> : <p>{t("portfolio.less")}</p>}
                     </Button>
                 </div>
             </div >

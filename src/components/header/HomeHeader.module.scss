@@ -13,6 +13,7 @@
 
     &__MainPicture {
         max-width: 910px;
+        flex-grow: 1;
     }
 
     &__Picture {
@@ -20,6 +21,7 @@
     }
 
     &__Column {
+        flex-grow: 1;
         max-width: 430px;
         display: flex;
         flex-direction: column;
@@ -34,6 +36,7 @@
         left: 0;
         right: 0;
         margin: 160px auto;
+        z-index: 100;
     }
 
     &__Logo {

@@ -1,17 +1,18 @@
 import React from 'react'
 import styles from './Dropdown.module.scss'
 
-const Dropdown = ({ options, onChange, ...props }) => {
+const Dropdown = ({ options, onChange, selectedValue }) => {
     return (
         <div className={styles.Dropdown}>
-            <select className={styles.Dropdown__Select}>
+            <select className={styles.Dropdown__Select}
+                onChange={e => onChange(e)}
+                value={selectedValue}>
                 {
                     options.map(option =>
                         <option
                             className={styles.Dropdown__Option}
                             key={option.key}
-                            vlaue={option.vlaue}
-                            onChange={e => onChange(e.target.vlaue)}>
+                            value={option.value}>
                             {option.name}
                         </option>
                     )

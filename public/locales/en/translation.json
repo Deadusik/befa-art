@@ -1,0 +1,29 @@
+{
+    "navbar": {
+        "home": "Home",
+        "portfolio": "My portfolio",
+        "about": "About me",
+        "contacts": "Contacts"
+    },
+    "header": "Hello, i am",
+    "portfolio": {
+        "title": "My portfolio",
+        "more": "Load more",
+        "less": "Hide",
+        "img-title-example": "Corrida",
+        "img-title-info-example": "100#100 Acryl",
+        "img-info-example": "I painted this picture experiencing love, </br> passion, pain for my Beloved, in the picture below<br/>in the right corner there is an incision, a wound<br/>from which blood flows, like in Corrida"
+    },
+    "about": {
+        "title": "About me",
+        "info": "I, <span>Befa</span>, put mine<br />artistic abstracts<br />Works before.<br />These art pictures show<br />the<br />whole spectrum of my inner joy,<br />spiritual Mood, immeasurable<br />Joy for life."
+    },
+    "contacts": {
+        "title": "My contacts",
+        "phone": "Phone",
+        "email": "Email",
+        "instagram": "Instagram",
+        "to-top": "To top"
+    },
+    "errorpage": "Error, page does not exist."
+}
