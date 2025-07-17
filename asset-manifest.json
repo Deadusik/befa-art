@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/BefaArt/static/css/main.4eb71d47.css",
-    "main.js": "/BefaArt/static/js/main.b30f3ab7.js",
-    "static/media/about_img.png": "/BefaArt/static/media/about_img.76d1c91d128d26bcd19d.png",
-    "static/media/main_img.png": "/BefaArt/static/media/main_img.604c6ec854e93d2f1340.png",
-    "static/media/img8.png": "/BefaArt/static/media/img8.fc36f1622f944b6de769.png",
-    "static/media/img1.png": "/BefaArt/static/media/img1.0251f69342cd01ce66a6.png",
-    "static/media/img2.png": "/BefaArt/static/media/img2.877318d4341daa64fbfe.png",
-    "static/media/img6.png": "/BefaArt/static/media/img6.7dc63c0d68b205978742.png",
-    "static/media/img4.png": "/BefaArt/static/media/img4.f7e110d95ee139686ff7.png",
-    "static/media/img5.png": "/BefaArt/static/media/img5.7a8b720481214800c34e.png",
-    "static/media/img10.png": "/BefaArt/static/media/img10.61a55b42f41e7f17a29b.png",
-    "static/media/img7.png": "/BefaArt/static/media/img7.cdf52cd38fe303e1d1bc.png",
-    "static/media/img3.png": "/BefaArt/static/media/img3.190e4bda2a514e42ba43.png",
-    "static/media/img9.png": "/BefaArt/static/media/img9.eea708683478098ec6be.png",
-    "static/media/KyivTypeSans-VarGX.ttf": "/BefaArt/static/media/KyivTypeSans-VarGX.d99ed80a79c38010b04a.ttf",
-    "static/media/acworth-bold.otf": "/BefaArt/static/media/acworth-bold.22adb2dbc298c1b28f2c.otf",
-    "static/media/Geometria-Medium.ttf": "/BefaArt/static/media/Geometria-Medium.a08bd436e4c28b3d487e.ttf",
-    "index.html": "/BefaArt/index.html",
-    "static/media/info.svg": "/BefaArt/static/media/info.aa203ab680bbffa6429592c6d78c3e90.svg",
-    "main.4eb71d47.css.map": "/BefaArt/static/css/main.4eb71d47.css.map",
-    "main.b30f3ab7.js.map": "/BefaArt/static/js/main.b30f3ab7.js.map"
+    "main.css": "/befa-art/static/css/main.9029d796.css",
+    "main.js": "/befa-art/static/js/main.e009edd2.js",
+    "static/media/about_img.png": "/befa-art/static/media/about_img.76d1c91d128d26bcd19d.png",
+    "static/media/main_img.png": "/befa-art/static/media/main_img.604c6ec854e93d2f1340.png",
+    "static/media/img8.png": "/befa-art/static/media/img8.fc36f1622f944b6de769.png",
+    "static/media/img1.png": "/befa-art/static/media/img1.0251f69342cd01ce66a6.png",
+    "static/media/img2.png": "/befa-art/static/media/img2.877318d4341daa64fbfe.png",
+    "static/media/img6.png": "/befa-art/static/media/img6.7dc63c0d68b205978742.png",
+    "static/media/img4.png": "/befa-art/static/media/img4.f7e110d95ee139686ff7.png",
+    "static/media/img5.png": "/befa-art/static/media/img5.7a8b720481214800c34e.png",
+    "static/media/img10.png": "/befa-art/static/media/img10.61a55b42f41e7f17a29b.png",
+    "static/media/img7.png": "/befa-art/static/media/img7.cdf52cd38fe303e1d1bc.png",
+    "static/media/img3.png": "/befa-art/static/media/img3.190e4bda2a514e42ba43.png",
+    "static/media/img9.png": "/befa-art/static/media/img9.eea708683478098ec6be.png",
+    "static/media/KyivTypeSans-VarGX.ttf": "/befa-art/static/media/KyivTypeSans-VarGX.d99ed80a79c38010b04a.ttf",
+    "static/media/acworth-bold.otf": "/befa-art/static/media/acworth-bold.22adb2dbc298c1b28f2c.otf",
+    "static/media/Geometria-Medium.ttf": "/befa-art/static/media/Geometria-Medium.a08bd436e4c28b3d487e.ttf",
+    "index.html": "/befa-art/index.html",
+    "static/media/info.svg": "/befa-art/static/media/info.aa203ab680bbffa6429592c6d78c3e90.svg",
+    "main.9029d796.css.map": "/befa-art/static/css/main.9029d796.css.map",
+    "main.e009edd2.js.map": "/befa-art/static/js/main.e009edd2.js.map"
   },
   "entrypoints": [
-    "static/css/main.4eb71d47.css",
-    "static/js/main.b30f3ab7.js"
+    "static/css/main.9029d796.css",
+    "static/js/main.e009edd2.js"
   ]
 }
