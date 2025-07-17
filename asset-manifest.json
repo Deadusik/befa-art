@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/befa-art/static/css/main.4a78fc45.css",
+    "main.css": "/befa-art/static/css/main.cc6d9dae.css",
     "main.js": "/befa-art/static/js/main.77365821.js",
     "static/js/255.2328fcfa.chunk.js": "/befa-art/static/js/255.2328fcfa.chunk.js",
     "static/media/about_img.png": "/befa-art/static/media/about_img.76d1c91d128d26bcd19d.png",
@@ -20,12 +20,12 @@
     "static/media/Geometria-Medium.ttf": "/befa-art/static/media/Geometria-Medium.a08bd436e4c28b3d487e.ttf",
     "index.html": "/befa-art/index.html",
     "static/media/info.svg": "/befa-art/static/media/info.aa203ab680bbffa6429592c6d78c3e90.svg",
-    "main.4a78fc45.css.map": "/befa-art/static/css/main.4a78fc45.css.map",
+    "main.cc6d9dae.css.map": "/befa-art/static/css/main.cc6d9dae.css.map",
     "main.77365821.js.map": "/befa-art/static/js/main.77365821.js.map",
     "255.2328fcfa.chunk.js.map": "/befa-art/static/js/255.2328fcfa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a78fc45.css",
+    "static/css/main.cc6d9dae.css",
     "static/js/main.77365821.js"
   ]
 }
