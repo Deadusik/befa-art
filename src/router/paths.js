@@ -1,1 +1,1 @@
-export const HOME = '/BefaArt'
+export const HOME = '/befa-art'
